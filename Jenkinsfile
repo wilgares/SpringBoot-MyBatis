@@ -29,7 +29,7 @@ node {
    echo 'Ejecutando tests'
 
       sh 'mvn verify'
-      step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+      //step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
 
    
    // ------------------------------------
