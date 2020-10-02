@@ -4,7 +4,7 @@ pipeline {
         stage('Example Build') {
             steps {
                echo 'building the applicaction....'
-                sh 'mvn -B clean verify'
+
             }
         }
        stage('Example Test') {
