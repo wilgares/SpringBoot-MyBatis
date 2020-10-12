@@ -31,6 +31,19 @@ node {
       sh 'mvn verify'
       //step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
 
+   // ------------------------------------
+   // -- ETAPA: Code Quality Analysis
+   // ------------------------------------
+   stage 'Calidad Codigo'
+   echo 'enviando codigo a SonarQB'
+   
+   
+    // ------------------------------------
+   // -- ETAPA: BUild and Push Image
+   // ------------------------------------
+   stage 'Push Image'
+   echo 'COnstruyendo Imagen y haciendo PUSH'
+   
    
    // ------------------------------------
    // -- ETAPA: Instalar
