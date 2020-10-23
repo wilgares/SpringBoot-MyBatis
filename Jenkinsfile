@@ -36,7 +36,7 @@ node {
    // ------------------------------------
    stage 'Calidad Codigo'
    echo 'enviando codigo a SonarQB'
-   withSonarQubeEnv(credentialsId: 'f4753850afcc85637b077951997f0576623f2803', installationName: 'http://sonarqube') { // You can override the credential to be used
+   withSonarQubeEnv(credentialsId: 'f4753850afcc85637b077951997f0576623f2803', installationName: 'http://sonarqube:9000') { // You can override the credential to be used
       sh 'mvn sonar:sonar'
     }
    
