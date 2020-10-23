@@ -37,7 +37,7 @@ node {
    stage 'Calidad Codigo'
    echo 'enviando codigo a SonarQB'
    withSonarQubeEnv(credentialsId: 'f4753850afcc85637b077951997f0576623f2803', installationName: 'http://sonarqube') { // You can override the credential to be used
-      sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.7.0.1746:sonar'
+      sh 'mvn sonar:sonar'
     }
    
    
