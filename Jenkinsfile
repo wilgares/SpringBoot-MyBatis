@@ -37,7 +37,7 @@ node {
    stage 'Calidad Codigo'
    echo 'enviando codigo a SonarQB'
    
-   sh 'mvn sonar:sonar -Dsonar.host.url=http://sonarqube:9000  -Dsonar.login=f4753850afcc85637b077951997f0576623f2803'
+   sh 'mvn sonar:sonar -Dsonar.host.url=http://sonarqube:9000  -Dsonar.login=082ec37c125ee98ddb6d3122fd5ca906a014bec2'
 /*   withSonarQubeEnv(credentialsId: 'f4753850afcc85637b077951997f0576623f2803', installationName: 'http://sonarqube:9000') { // You can override the credential to be used
       sh 'mvn sonar:sonar'
     }*/
